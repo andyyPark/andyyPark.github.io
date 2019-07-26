@@ -1689,6 +1689,10 @@ footer .footer .copyright a:hover {
     padding-bottom: 30px;
   }
 
+  footer .hidden-md .hidden-sm .hidden-xs {
+    
+  }
+
   footer .footer .copyright {
     text-align: center;
   }

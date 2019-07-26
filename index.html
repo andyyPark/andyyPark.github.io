@@ -27,7 +27,7 @@
   <div class="wrapper top_60 container">
     <div class="row">
 
-      <div class="col-lg-3.5 col-md-4">
+      <div id="sidebar" class="col-lg-3.5 col-md-4">
         <div class="profile">
 
           <div class="profile-name">
@@ -49,6 +49,7 @@
             </li>
             <li>
               <p>School of Physical Sciences</p>
+
             </li>
             <li>
               <p>University of California, Irvine</p>
@@ -80,7 +81,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>News</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -90,7 +91,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Research Interests</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                     <div class="text-center">
                       asdlkfhsadkfhsadf
                       <p>asldkfsakdhf</p>
@@ -99,7 +100,7 @@
                   </section>
                 </div>
 
-<!--
+                <!--
                 <div class="row">
                   <section class="about-me line col-md-12 padding_30 padbot_15">
                     <hr>
@@ -116,7 +117,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Education</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -126,7 +127,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Research Experience</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -136,7 +137,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Work Experience</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -146,7 +147,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Honors and Awards</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -156,7 +157,7 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Technical Skills</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
                   </section>
                 </div>
 
@@ -166,7 +167,10 @@
                     <div class="section-title d-flex justify-content-center">
                       <h2>Language Proficiency</h2>
                     </div>
-                    <hr class="bottom_45">
+                    <hr class="bottom_15">
+                    <div class="text-center">
+                      Fluent in <em>English</em> and Native in <em>Korean</em>
+                    </div>
                   </section>
                 </div>
 
@@ -174,19 +178,56 @@
             </div>
           </div>
         </div>
-      </div>
 
+        <footer>
+          <div class="footer col-md-12 top_30 bottom_30 d-flex justify-content-center">
+            <div class="copyright col-lg-8 col-md-12 text-center">
+              <p>Contact me at chanhyp1(at)uci(dot)edu for more. <br>
+              © All rights reserved | Andy Park</p>
 
+            </div>
+          </div>
+        </footer>
+      </div> <!-- Tab Container - End -->
 
+    </div> <!-- Row - End -->
 
+  </div> <!-- Wrapper - End -->
 
-    </div>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+  <script>
+    $(function() {
 
+      var $sidebar = $("#sidebar"),
+        $window = $(window),
+        offset = $sidebar.offset(),
+        topPadding = 15;
 
+      $window.scroll(function() {
 
-  </div>
+        if ($window.width() < 770) {
+          return;
+        } else {
+          if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+              marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+          } else {
+            $sidebar.stop().animate({
+              marginTop: 0
+            });
+          }
+        }
+
+      });
+
+    });
+  </script>
+
 
 </body>
 
