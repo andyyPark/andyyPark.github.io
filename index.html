@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/colors/yellow.css">
   <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/custom.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
 
@@ -86,7 +87,7 @@
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Research Interests</h2>
@@ -112,17 +113,30 @@
                 </div>
 -->
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Education</h2>
                     </div>
                     <hr class="bottom_15">
+                    <div class="info">
+                      <div class="college">
+                        <div class="college-image">
+
+                        </div>
+                        <div class="college-info">
+                          Bachelor of Science in <strong>Physics</strong> (Astrophysics) <br>
+                          Bachelor of Science in <strong>Mathematics</strong> (Pure Mathematics) <br>
+                          Minor in <strong>Computer Science</strong>
+                        </div>
+                      </div>
+
+                    </div>
                   </section>
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Research Experience</h2>
@@ -132,7 +146,7 @@
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Work Experience</h2>
@@ -142,34 +156,55 @@
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Honors and Awards</h2>
                     </div>
                     <hr class="bottom_15">
+                    <div class="info">
+                      <strong>Dean's Honor List</strong>, University of California Irvine
+                    </div>
                   </section>
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding_10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Technical Skills</h2>
                     </div>
                     <hr class="bottom_15">
+                    <div class="info">
+                      <table class="table table-borderless padding_10">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Advanced</th>
+                            <td>Python, C++, Java, Javascript, HTML5, CSS</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Intermediate</th>
+                            <td>React, Express JS, MongoDB, jQuery</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Novice</th>
+                            <td>Assembly Language</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </section>
                 </div>
 
                 <div class="row">
-                  <section class="about-me line col-md-12 padding_30 padbot_15">
+                  <section class="about-me line col-md-12 padding10 padbot_15">
                     <hr>
                     <div class="section-title d-flex justify-content-center">
                       <h2>Language Proficiency</h2>
                     </div>
                     <hr class="bottom_15">
-                    <div class="text-center">
-                      Fluent in <em>English</em> and Native in <em>Korean</em>
+                    <div class="text-left info">
+                      Fluent in <strong>English</strong> and Native in <strong>Korean</strong>
                     </div>
                   </section>
                 </div>
@@ -180,11 +215,10 @@
         </div>
 
         <footer>
-          <div class="footer col-md-12 top_30 bottom_30 d-flex justify-content-center">
+          <div id="footer" class="footer col-md-12 top_30 bottom_30 d-flex justify-content-center">
             <div class="copyright col-lg-8 col-md-12 text-center">
-              <p>Contact me at chanhyp1(at)uci(dot)edu for more. <br>
-              © All rights reserved | Andy Park</p>
-
+              <p class="mt-3">Contact me at chanhyp1(at)uci(dot)edu for more. <br>
+                © All rights reserved | Andy Park</p>
             </div>
           </div>
         </footer>
@@ -207,8 +241,10 @@
         offset = $sidebar.offset(),
         topPadding = 15;
 
-      $window.scroll(function() {
+      var $footer = $("#footer"),
+        footerOffset = $footer.offset().top;
 
+      $window.scroll(function() {
         if ($window.width() < 770) {
           return;
         } else {
