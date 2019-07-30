@@ -31,12 +31,10 @@
 
 .college {
   width: 100%;
-  display: inline-block;
   float: left;
 }
 
 .college .college-image {
-  display: inline-block;
   margin: 0 1.2em 0 0 ;
   float: left;
   width: 30%;
@@ -51,12 +49,25 @@
 
 .college .college-info {
   float: left;
-  display: inline-block;
   width: 65%;
 }
 
+.info .tags
+{
+  color: #999;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 16px;
+  word-spacing: 1.1px;
+}
+
+.info .gpa {
+  float: left;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
 .info .courses {
-  display: block;
   float: left;
   margin-top: 1em;
 }
