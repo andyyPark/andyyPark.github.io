@@ -29,10 +29,12 @@
   color: #404040;
 }
 
+/*
 .college {
   width: 100%;
   float: left;
 }
+
 
 .college .college-image {
   margin: 0 1.2em 0 0 ;
@@ -40,6 +42,7 @@
   width: 30%;
   height: 50%;
 }
+
 
 .college .college-image img {
   height: auto;
@@ -52,7 +55,7 @@
   float: left;
   width: 65%;
 }
-
+*/
 
 .info .tags
 {
