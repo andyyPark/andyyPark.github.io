@@ -44,6 +44,7 @@
 .college .college-image img {
   height: auto;
   max-width: 90%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -51,6 +52,7 @@
   float: left;
   width: 65%;
 }
+
 
 .info .tags
 {
