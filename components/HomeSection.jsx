@@ -1,9 +1,13 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-const HomeSection = () => {
+const HomeSection = ({ active }) => {
   return (
     <>
-      <section id="home-section" className="active">
+      <section
+        id="home-section"
+        className={`${active ? "active" : "inactive"}`}
+        style={{ display: active ? "block" : "none" }}
+      >
         <hr id="outer-divider" />
         <div className="image">
           <span className="frame">
@@ -23,4 +27,3 @@ const HomeSection = () => {
 };
 
 export default HomeSection;
-

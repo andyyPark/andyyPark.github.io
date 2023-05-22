@@ -86,6 +86,15 @@ hr:before {
   transition: opacity 0.25s ease-in-out0.375s, visibility 0.25s linear 0.37s;
 }
 
+#main > .inner > section {
+  transition: opacity 0.5s ease-in-out 0.25s, min-height 0.25s, max-height 0.25s ease-in-out;
+}
+
+#main > .inner > section.inactive {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
 #main > .inner > * > * {
   margin-top: var(--spacing);
   margin-bottom: var(--spacing);
