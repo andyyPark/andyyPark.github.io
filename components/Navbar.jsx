@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import NavItem from "./NavItem"
+import NavItem from "./NavItem";
 
 const NAV_LIST = [
   { text: "Home", href: "/" },
@@ -13,20 +13,19 @@ const Navbar = () => {
   const [activeIdx, setActiveIdx] = useState(-1);
   return (
     <header>
-      <nav className="`nav`">
-        <div className={`${navActive ? "active" : ""} nav__item-list`}>
-          {NAV_LIST.map((item, idx) => (
-            <div
-              onClick={() => {
-                setActiveIdx(idx);
-                setNavActive(false);
-              }}
-              key={item.text}
-            >
-              <NavItem active={activeIdx === idx} {...item}></NavItem>
-            </div>
-          ))}
-        </div>
+      <nav id="nav">
+        {NAV_LIST.map((item, idx) => (
+          <div
+            onClick={() => {
+              setActiveIdx(idx);
+              setNavActive(false);
+            }}
+            key={item.text}
+            className="nav__button"
+          >
+            <NavItem active={activeIdx === idx} {...item}></NavItem>
+          </div>
+        ))}
       </nav>
     </header>
   );
