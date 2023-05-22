@@ -11,7 +11,7 @@ const HomeSection = ({ active }) => {
         <hr id="outer-divider" />
         <div className="image">
           <span className="frame">
-            <Image src="/ParkAndy.jpg" width={400} height={400} alt="sadasd" />
+            <Image src="/ParkAndy.jpg" width={400} height={400} alt="Picture of me" />
           </span>
         </div>
 
