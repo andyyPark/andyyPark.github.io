@@ -7,6 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --viewport-height: 100vh;
+  --spacing: 1.125rem;
 }
 
 *, *:before, *:after {
@@ -85,6 +86,15 @@ hr:before {
   transition: opacity 0.25s ease-in-out0.375s, visibility 0.25s linear 0.37s;
 }
 
+#main > .inner > * > * {
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+#main > .inner > * > :last-child {
+  margin-bottom: 0 !important;
+}
+
 #nav {
   display: flex;
   flex-direction: row;
@@ -133,6 +143,13 @@ hr:before {
   margin-top: -0.5px;
 }
 
+#inner-divider:before {
+  width: 2rem;
+  border-top: solid 1px #CCCCCC;
+  height: 1px;
+  margin-top: -0.5px;
+}
+
 .image {
   display: block;
   line-height: 0;
@@ -157,6 +174,28 @@ hr:before {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+#name {
+  text-transform: uppercase;
+  color: #474747;
+  letter-spacing: 0.4rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 400;
+  width: calc(100% + 0.4rem);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#title {
+  text-transform: uppercase;
+  color: #474747;
+  letter-spacing: 0.4rem;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-weight: 400;
+  width: calc(100% + 0.4rem);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
