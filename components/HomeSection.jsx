@@ -8,10 +8,14 @@ const HomeSection = ({ active }) => {
         className={`${active ? "active" : "inactive"}`}
         style={{ display: active ? "block" : "none" }}
       >
-        <hr id="outer-divider" />
         <div className="image">
           <span className="frame">
-            <Image src="/ParkAndy.jpg" width={400} height={400} alt="Picture of me" />
+            <Image
+              src="/ParkAndy.jpg"
+              width={400}
+              height={400}
+              alt="Picture of me"
+            />
           </span>
         </div>
 
@@ -20,7 +24,6 @@ const HomeSection = ({ active }) => {
         <hr id="inner-divider" />
 
         <p id="title">Ph.D. Candidate @ Carnegie Mellon University</p>
-        <hr id="outer-divider" />
       </section>
     </>
   );

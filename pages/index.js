@@ -17,6 +17,7 @@ export default function Home() {
         activeSection={activeSection}
         setActiveSection={setActiveSection}
       />
+      <hr id="outer-divider" />
     {sections.map(section => (
       <Section
         key={section.id}
@@ -25,6 +26,7 @@ export default function Home() {
         href={section.href}
       />
     ))}
+    <hr id="outer-divider" />
       
     </Layout>
   );

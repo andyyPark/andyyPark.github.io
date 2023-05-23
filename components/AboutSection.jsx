@@ -8,8 +8,6 @@ const HomeSection = ({ active }) => {
         className={`${active ? "active" : "inactive"}`}
         style={{ display: active ? "block" : "none" }}
       >
-        <hr id="outer-divider" />
-
         <p id="about">About</p>
         <p id="about__text">
           <span className="p">
@@ -18,12 +16,11 @@ const HomeSection = ({ active }) => {
             advisded by Rachel Mandelbaum studying observational cosmology.
           </span>
           <span className="p">
-            Prior to graduate school, I recieved my B.S. in Mathematics and Physics
-            (specialization in Astrophysics) at the Univeristy of California, Irvine.
+            Prior to graduate school, I recieved my B.S. in Mathematics and
+            Physics (specialization in Astrophysics) at the Univeristy of
+            California, Irvine.
           </span>
         </p>
-
-        <hr id="outer-divider" />
       </section>
     </>
   );
