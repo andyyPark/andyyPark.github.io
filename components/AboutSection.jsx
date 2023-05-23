@@ -4,7 +4,7 @@ const HomeSection = ({ active }) => {
   return (
     <>
       <section
-        id="home-section"
+        id="about-section"
         className={`${active ? "active" : "inactive"}`}
         style={{ display: active ? "block" : "none" }}
       >
