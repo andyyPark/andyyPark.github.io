@@ -222,7 +222,7 @@ hr:before {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-#about {
+#section__title {
   text-transform: uppercase;
   color: #474747;
   font-family: 'Source Sans Pro' sans-serif;
@@ -233,7 +233,7 @@ hr:before {
   font-weight: 400;
 }
 
-#about__text {
+#section__text {
   color: #474747;
   font-family: 'Source Sans Pro' sans-serif;
   letter-spacing: 0.025rem;
@@ -243,7 +243,7 @@ hr:before {
   font-weight: 200;
 }
 
-#about__text span.p:nth-child(n + 2) {
+#section__text span.p:nth-child(n + 2) {
   margin-top: 1rem;
 }
 

@@ -8,6 +8,7 @@ export default function Home() {
   const sections = [
     { id: 0, text: "Home", href: "/" },
     { id: 1, text: "About", href: "#about" },
+    { id: 2, text: "Research", href:"#research"}
   ];
 
   const [activeSection, setActiveSection] = useState(0);

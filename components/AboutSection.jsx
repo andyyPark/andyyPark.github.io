@@ -8,8 +8,8 @@ const HomeSection = ({ active }) => {
         className={`${active ? "active" : "inactive"}`}
         style={{ display: active ? "block" : "none" }}
       >
-        <p id="about">About</p>
-        <p id="about__text">
+        <p id="section__title">About</p>
+        <p id="section__text">
           <span className="p">
             Hello! I am a second year Ph.D. candidate in Physics at McWilliams
             Center for Cosmology, Carnegie Mellon University, where I am
