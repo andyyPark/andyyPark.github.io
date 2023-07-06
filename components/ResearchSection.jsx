@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { papers } from "../data/papers";
 
 const ResearchSection = ({ active }) => {
   return (
@@ -9,9 +10,50 @@ const ResearchSection = ({ active }) => {
         style={{ display: active ? "block" : "none" }}
       >
         <p id="section__title">Research</p>
-        <p id="section__text">
-          Under Construction!
+        <p id="research__text">
+          My primary research area is weak gravitational lensing with a
+          particular interest in utilizing statistical and machine learning
+          methods to perform cosmological analysis on large survey dataset, such
+          as the Vera R. Observatory's Legacy Survey of Space and Time (LSST),
+          the Subaru Telescope's Hyper Suprime-Cam (HSC), and the Roman Space
+          Telescope. My research focuses on statistical analysis on turning
+          large dataset into inferences on cosmological models and analytical
+          estimation for weak lensing distortion from a large ensemble of galaxy
+          images.
         </p>
+        <div id="research">
+          {papers.map((paper) => (
+            <div key={paper.id} className="research-card">
+              <div>
+                <Image
+                  src={paper.thumbnail}
+                  alt="Thumbnail"
+                  width={500}
+                  height={500}
+                />
+              </div>
+              <div>
+                <h3>
+                  <span className="research__bold">Title:</span>
+                  {paper.title}
+                </h3>
+                <p>
+                  <span className="research__bold">Authors:</span>
+                  {paper.author}
+                </p>
+                <a
+                  href={paper.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="research__link"
+                >
+                  View Paper
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p id="section__text">Under Construction!</p>
       </section>
     </>
   );
