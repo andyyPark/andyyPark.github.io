@@ -14,8 +14,8 @@ const ResearchSection = ({ active }) => {
           My primary research area is weak gravitational lensing with a
           particular interest in utilizing statistical and machine learning
           methods to perform cosmological analysis on large survey dataset, such
-          as the Vera R. Observatory's Legacy Survey of Space and Time (LSST),
-          the Subaru Telescope's Hyper Suprime-Cam (HSC), and the Roman Space
+          as the Vera R. Observatory&#39;s Legacy Survey of Space and Time (LSST),
+          the Subaru Telescope&#39;s Hyper Suprime-Cam (HSC), and the Roman Space
           Telescope. My research focuses on statistical analysis on turning
           large dataset into inferences on cosmological models and analytical
           estimation for weak lensing distortion from a large ensemble of galaxy
