@@ -11,7 +11,7 @@ const HomeSection = ({ active }) => {
         <p id="section__title">About</p>
         <p id="section__text">
           <span className="p">
-            Hello! I am a second year Ph.D. candidate in Physics at McWilliams
+            Hello! I am a third year Ph.D. candidate in Physics at McWilliams
             Center for Cosmology, Carnegie Mellon University, where I am
             advisded by Rachel Mandelbaum studying observational cosmology.
           </span>
