@@ -34,11 +34,11 @@ const ResearchSection = ({ active }) => {
               </div>
               <div>
                 <h3>
-                  <span className="research__bold">Title:</span>
+                  <span className="research__bold">Title: </span>
                   {paper.title}
                 </h3>
                 <p>
-                  <span className="research__bold">Authors:</span>
+                  <span className="research__bold">Authors: </span>
                   {paper.author}
                 </p>
                 <a

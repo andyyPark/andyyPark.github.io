@@ -356,11 +356,11 @@ p span.p {
 }
 
 .research-card > :nth-child(1) {
-  width: calc(40% + 1.875rem / 2);
+  width: calc(100% + 1.875rem / 2);
 }
 
 .research-card > :nth-child(2) {
-  width: calc(60% + 1.875rem / 2);
+  width: calc(100% + 1.875rem / 2);
 }
 
 .research-card > *:first-child {
@@ -382,11 +382,14 @@ p span.p {
 .research-card .research__link {
   font-size: 0.7rem;
   line-height: 1rem;
+  border-bottom: solid 1px #CCCCCC;
+  padding-bottom: 0.5em;
 }
 
 .research-card .research__link:hover {
   color: #309EDB;
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
