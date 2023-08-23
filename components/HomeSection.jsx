@@ -11,7 +11,7 @@ const HomeSection = ({ active }) => {
         <div className="image">
           <span className="frame">
             <Image
-              src="/ParkAndy.jpg"
+              src="/ParkAndy1.jpg"
               width={400}
               height={400}
               alt="Picture of me"
